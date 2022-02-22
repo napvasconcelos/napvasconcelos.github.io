@@ -1,1 +1,114 @@
-Hello World
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Portfolio | João Henrique Vasconcelos</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Portfolio" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="3rd Year Mechanical Engineering Student at UFRGS, currently working on Jusbrasil’s data platform. Intrested in Data Science, Optimization, Machine Learning and Aerodynamics. View My LinkedIn Profile" />
+<meta property="og:description" content="3rd Year Mechanical Engineering Student at UFRGS, currently working on Jusbrasil’s data platform. Intrested in Data Science, Optimization, Machine Learning and Aerodynamics. View My LinkedIn Profile" />
+<link rel="canonical" href="https://henriquevasconcelos.github.io/" />
+<meta property="og:url" content="https://henriquevasconcelos.github.io/" />
+<meta property="og:site_name" content="João Henrique Vasconcelos" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Portfolio" />
+<script type="application/ld+json">
+{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://henriquevasconcelos.github.io/images/me_logo.png"}},"description":"3rd Year Mechanical Engineering Student at UFRGS, currently working on Jusbrasil’s data platform. Intrested in Data Science, Optimization, Machine Learning and Aerodynamics. View My LinkedIn Profile","url":"https://henriquevasconcelos.github.io/","@type":"WebSite","headline":"Portfolio","name":"João Henrique Vasconcelos","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=60661ddc1447f257771ba8eca87a27210e755192">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        
+          <img src="/images/me_logo.png" alt="Logo" />
+        
+        
+        <br><br>
+        <h2><a href="https://henriquevasconcelos.github.io/">João Henrique Vasconcelos</a></h2>
+        
+        <p>3rd Year Mechanical Engineering Student at <a href="http://www.ufrgs.br/english/home">UFRGS</a>, currently working on <a href="https://www.jusbrasil.com.br/home">Jusbrasil's</a> data platform. <br><br> Intrested in Data Science, Optimization, Machine Learning and Aerodynamics.  <br><br> <a href="https://www.linkedin.com/in/jo%C3%A3o-henrique-vasconcelos-8a14a710a/">View My LinkedIn Profile</a> 
+</p>
+
+        
+
+        
+        <p class="view"><a href="https://github.com/henriquevasconcelos">View My GitHub Profile</a></p>
+        
+
+        
+      </header>
+      <section>
+
+      <h1 id="portfolio">Portfolio</h1>
+
+<hr />
+
+<h2 id="uvcs">UVCS</h2>
+
+<p><img src="images/uvcs_intro.png?raw=true" width="1250" /></p>
+
+<p>UVCS is a project in development aiming to map and model pathogens under UV-C light to combat hospital infections. This map is continuously updated, informing our robot TALOS, how much time it should devote to each location to ensure a safe and thorough sanitation. It also aims to develop a web app where hospital managers can track how sanitized each point of each environment is, how many times has each space been sanitized and how much time is needed to clean it. The project was highlighted as the best Ideation Team in the 2020/2021 Entrepreneurial Initiation Program at UFRGS.</p>
+
+<p>I was the main developer of the embedded model, which was based on the works of <a href="https://pubs.acs.org/doi/10.1021/es070056u">Walker and Ko</a>, <a href="https://www.sciencedirect.com/science/article/abs/pii/S1572100020303495?via%3Dihub">Sabino et al</a> and many others. The implementation was initially done in Python but later we switched to Julia for increased performance. In the system’s current iteration, we estimate a 99% reduction of the pathogens in the room in under one minute.</p>
+
+<h2 id="pampa-aerodesign">Pampa Aerodesign</h2>
+
+<h3 id="pampa-propeller-data-set">Pampa Propeller Data Set</h3>
+
+<p><img src="images/ppds_logo.png?raw=true" /></p>
+
+<p><a href="https://github.com/Pampa-Aerodesign/PampaPropellerDS">Pampa Propeller Data Set</a> or PPDS, provides dynamic performance data for all propellers made by <a href="https://www.apcprop.com/">APC</a>, in a analysis-friendly format, with propeller and RPM indexation. It enables the continuous update of this data from the latest files provided by APC via a Python Crawler and regex formater.</p>
+
+<p><strong>Features in development</strong></p>
+<ul>
+  <li>A Streamlit app to visualize data from the propeller database;</li>
+  <li>Incorporating unit conversion with <a href="https://pint.readthedocs.io/en/stable/">Pint</a>;</li>
+  <li>Local indexing of the dataset using <a href="https://tinydb.readthedocs.io/en/latest/">TinyDB’s</a> JSON database;</li>
+</ul>
+
+<p><strong>Analysis</strong></p>
+
+<p>I have also <a href="/pdf/propeller_analysis.html">analysed</a> the propellers the team currently owns, using <a href="https://pandas.pydata.org/">Pandas</a> and <a href="https://matplotlib.org/">Matplotlib</a> to visualise their performance.</p>
+
+<p><img src="images/ppds_plots.png?raw=true" /></p>
+
+<hr />
+
+<h3 id="airfoil-optimization">Airfoil Optimization</h3>
+<p>The team had the task of improving the performance of it’s airfoil, to do so we employed a genetic algorithm written in Fortran aiming to maximize
+the lift coeficient (CL) whilst maintaining a minimum thickness and a maximum drag coefficient. The computational costs of these simulations was too high and so 
+I employed Google Cloud’s elastic computation service, thereby reducing the execution time by a factor of 10. I subsequently also analyzed the performance of the resulting airfoil, which had a 10% higher CL while holding to the stated optimization constraints.</p>
+
+<p><img src="images/Airfoil.png?raw=true" /></p>
+
+
+
+      </section>
+      <footer>
+        
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-000000-0', 'auto');
+      ga('send', 'pageview');
+    </script>
+    
+  </body>
+</html>
